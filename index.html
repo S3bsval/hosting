@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelated Jellyfish</title>
+  <style>
+    .pixelated {
+      image-rendering: pixelated; /* Makes the image appear pixelated */
+      image-rendering: crisp-edges; /* Alternative for better browser support */
+      width: 200px; /* Adjust size to emphasize pixelation */
+      height: 200px;
+      margin: 10px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Pixelated Jellyfish</h1>
+  <div class="container">
+    <img src="jellyfish1.png" alt="Jellyfish 1" class="pixelated">
+    <img src="jellyfish2.png" alt="Jellyfish 2" class="pixelated">
+    <img src="jellyfish3.png" alt="Jellyfish 3" class="pixelated">
+  </div>
+</body>
+</html>
