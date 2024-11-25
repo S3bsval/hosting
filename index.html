@@ -1,16 +1,30 @@
-// Crea un archivo llamado "server.js" y pega este código
-
-const http = require('http');
-
-// Crear un servidor
-const server = http.createServer((req, res) => {
-  res.statusCode = 200; // Código de respuesta: OK
-  res.setHeader('Content-Type', 'text/plain'); // Encabezado de respuesta
-  res.end('Hola Mundo\n'); // Contenido que se envía al cliente
-});
-
-// Define el puerto y comienza a escuchar
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}/`);
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SebastianValero</title>
+  <style>
+    .pixelated {
+      image-rendering: pixelated; /* Makes the image appear pixelated */
+      image-rendering: crisp-edges; /* Alternative for better browser support */
+      width: 200px; /* Adjust size to emphasize pixelation */
+      height: 200px;
+      margin: 10px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Pixelated Jellyfish</h1>
+  <div class="container">
+    <img src="jellyfish1.png" alt="Jellyfish 1" class="pixelated">
+    <img src="jellyfish2.png" alt="Jellyfish 2" class="pixelated">
+    <img src="jellyfish3.png" alt="Jellyfish 3" class="pixelated">
+  </div>
+</body>
+</html>
